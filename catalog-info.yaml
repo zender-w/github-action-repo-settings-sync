@@ -1,0 +1,15 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: github-action-repo-settings-sync
+  description: GitHub Action pour synchroniser les paramètres de repository
+  annotations:
+    # ✅ ANNOTATION CRUCIALE - votre repo exact
+    github.com/project-slug: zender-w/github-action-repo-settings-sync
+    # Optionnel : liens utiles
+    github.com/workflows: ci.yml,test.yml
+spec:
+  type: tool
+  lifecycle: production
+  owner: zender-w
+  system: github-automation
